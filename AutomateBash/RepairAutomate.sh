@@ -12,8 +12,8 @@ cd /tmp&&(
     mv -f config.sh config.sh.bak 2>/dev/null
     [ -f config.sh.bak ]&&sed "s/LOCATION_ID=[0-9]*/LOCATION_ID=$LOCATIONID/" config.sh.bak > config.sh&&[ -f config.sh ]&&echo "SUCCESS-Installer Data Updated for location $LOCATIONID"
     . ./config.sh ; installer -pkg ./LTSvc.mpkg -verbose -target /
-    [ -d /usr/local/ltechagent ]&&echo "SUCCESS-computer_id:$(sudo grep -o '"computer_id": *[0-9]*' /usr/local/ltechagent/state | grep -o "[0-9]*$")"
-    launchctl list | grep -i "com.labtechsoftware"&&echo "LTService Started successfully"
+    [ -d /usr/local/ltechagent ]&&echo "SUCCESS"
+    launchctl list | grep -i "com.labtechsoftware"&&echo "LTService Started successfully; computer_id:$(sudo grep -o '"computer_id": *[0-9]*' /usr/local/ltechagent/state | grep -o "[0-9]*$")"
    )
   )||echo ERROR-Failed to extract
  )||echo ERROR-Failed to download cwaagent.zip
