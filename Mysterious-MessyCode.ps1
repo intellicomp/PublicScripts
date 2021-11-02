@@ -1,0 +1,1 @@
+ $Uninstallers = Get-ChildItem HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*;($Uninstallers|% {$a=$_;Get-ItemProperty -name UninstallString -Path "$($a.name.replace('HKEY_LOCAL_MACHINE','HKLM:'))" -ErrorAction SilentlyContinue|? {(Get-ItemProperty -name DisplayName -Path $a.name.replace('HKEY_LOCAL_MACHINE','HKLM:')).DisplayName -like '*Carbon*'}}).UninstallString
