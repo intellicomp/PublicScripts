@@ -31,6 +31,7 @@ start-sleep -s 2;
 
 ForEach ($badDir in $badDirs) {
 	$dsfolder = gi -Path $badDir -ea 0| select -exp fullname;
+	echo $dsfolder
 	if ( $dsfolder) {
 		echo 'INFECTED'
 		exit
@@ -77,3 +78,5 @@ Foreach ($reg2 in $badreg2){
 		}
 	}
 }
+
+echo 'CLEAN'
