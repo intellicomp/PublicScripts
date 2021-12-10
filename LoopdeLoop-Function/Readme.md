@@ -20,6 +20,6 @@ First person to correctly identify the reason this code was created and respond 
 ## Challenge Part 2
 Person who can submit a pull request of the powershell with the best rewrite of the code will win $20.00 Amazon Gift Card
 
-## Winning Scenarios
+## Winning Scenarios maximum payout
 - A single person can win up to $75.00
 - The person who wins Part 1 can win up to $35.00 and the person who wins Part 2 can win up to $45.00
