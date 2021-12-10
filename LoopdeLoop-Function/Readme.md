@@ -3,8 +3,9 @@
 This challenge will have multiple ways to win, and multiple people can win it. Part 1 will be won by the **FIRST** person to get the correct answer!
 Part 2 will be judged at the end of the deadline (December 27th) by a panel of three who will pick the best submission. *It is possible for one person to win both challenges*
 
-### BONUS!! An additional $25.00 will be added *to any of the winners* who can properly turn the entire powershell script into a **PROPER** function OR module with a working Get-Help
+### BONUS!! An additional $25.00 will be added *to any of the winners* who can turn the entire powershell script into a **PROPER** function OR module with a working Get-Help
 ### BONUS!! An additional $20.00 will be added if *one person* wins **both** parts of the challenge **AND** the above Bonus
+
 Here are some key concepts to keep in mind when working on the challenge.
 
 - Correct PowerShell Function syntax
